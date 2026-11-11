@@ -66,7 +66,7 @@ website-uptime-monitor/
    ./install.sh
    ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### 1. `config/sites.conf`
 
@@ -140,7 +140,7 @@ Purges logs and temporary files older than the configured `LOG_RETENTION_DAYS`:
 
 ```
 
-## 📊 Sample Output
+## Sample Output
 
 ### Terminal Console Output
 
@@ -148,10 +148,10 @@ Purges logs and temporary files older than the configured `LOG_RETENTION_DAYS`:
 =====================================================
    WEBSITE UPTIME MONITOR  -  2026-03-31 14:30:02
 =====================================================
-✅ Success: https://www.google.com (Status: 200, Time: 142ms)
-✅ Success: https://www.github.com (Status: 200, Time: 310ms)
-⚠️ Warning: https://example.com (Status: 200, Time: 2450ms) [SLOW]
-❌ Server down: https://broken-site.xyz (Status: 000, Time: timeout)
+Success: https://www.google.com (Status: 200, Time: 142ms)
+Success: https://www.github.com (Status: 200, Time: 310ms)
+Warning: https://example.com (Status: 200, Time: 2450ms) [SLOW]
+Server down: https://broken-site.xyz (Status: 000, Time: timeout)
 -----------------------------------------------------
 Checked: 4 | Up: 2 | Slow: 1 | Down: 1
 
@@ -165,7 +165,7 @@ Checked: 4 | Up: 2 | Slow: 1 | Down: 1
 
 ```
 
-## ⏰ Cron Automation
+## Cron Automation
 
 To enable 24/7 background monitoring and automated reports, add the following cron jobs (`crontab -e`):
 
@@ -200,6 +200,6 @@ To enable 24/7 background monitoring and automated reports, add the following cr
 
 - **Mailer** _(Optional for email alerts)_: `mail`, `mailx`, or `msmtp`
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

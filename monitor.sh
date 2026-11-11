@@ -80,11 +80,11 @@ check_target() {
   done
 
   if [[ "$status_code" -lt 200 || "$status_code" -ge 400 ]]; then
-    echo "❌ Server down: $url (Status: $status_code, Time: ${response_time}ms)"
+    echo "Server down: $url (Status: $status_code, Time: ${response_time}ms)"
     return 1
   fi
 
-  echo "✅ Success: $url (Status: $status_code, Time: ${response_time}ms)"
+  echo "Success: $url (Status: $status_code, Time: ${response_time}ms)"
   return 0
 }
 
